@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Symbiosis Admission Form</title>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Internal CSS -->
+<style>
+h2{
+text-align:center;
+color:darkblue;
+font-family:Arial;
+}
+
+.form-box{
+width:400px;
+margin:auto;
+padding:20px;
+border:2px solid black;
+background:#f2f2f2;
+border-radius:8px;
+}
+
+label{
+font-weight:bold;
+}
+
+</style>
+
+<!-- JavaScript Validation -->
+<script src="validate.js"></script>
+
+</head>
+
+<body>
+
+<h2>Symbiosis Admission Registration Form</h2>
+
+<div class="form-box">
+
+<form onsubmit="return validateForm()">
+
+<label>Name:</label><br>
+<input type="text" id="name"><br><br>
+
+<label>Email ID:</label><br>
+<input type="text" id="email"><br><br>
+
+<label>Password:</label><br>
+<input type="password" id="password"><br><br>
+
+<label>Confirm Password:</label><br>
+<input type="password" id="confirm"><br><br>
+
+<label>Gender:</label><br>
+<input type="checkbox" id="male" value="Male"> Male
+<input type="checkbox" id="female" value="Female"> Female
+<input type="checkbox" id="other" value="Other"> Other
+<br><br>
+
+<label>Course:</label><br>
+<select id="course">
+<option value="">Select Course</option>
+<option>BCA</option>
+<option>BBA</option>
+<option>MCA</option>
+<option>MBA</option>
+</select>
+
+<br><br>
+
+<input type="submit" id="register" value="Register">
+
+</form>
+
+</div>
+
+</body>
+</html>
